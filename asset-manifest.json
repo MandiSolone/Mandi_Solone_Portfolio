@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Mandi_Solone_Portfolio/static/css/main.3a8c7366.css",
+    "main.css": "/Mandi_Solone_Portfolio/static/css/main.2c25fd6d.css",
     "main.js": "/Mandi_Solone_Portfolio/static/js/main.90e1fb55.js",
     "static/js/453.b21437c2.chunk.js": "/Mandi_Solone_Portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/Headshot.png": "/Mandi_Solone_Portfolio/static/media/Headshot.62f1dbe21a0d9887ba48.png",
@@ -8,12 +8,12 @@
     "static/media/diceGame.png": "/Mandi_Solone_Portfolio/static/media/diceGame.31bc354bde7984392b8c.png",
     "static/media/mondiran.png": "/Mandi_Solone_Portfolio/static/media/mondiran.a827682f5d5c36de3206.png",
     "index.html": "/Mandi_Solone_Portfolio/index.html",
-    "main.3a8c7366.css.map": "/Mandi_Solone_Portfolio/static/css/main.3a8c7366.css.map",
+    "main.2c25fd6d.css.map": "/Mandi_Solone_Portfolio/static/css/main.2c25fd6d.css.map",
     "main.90e1fb55.js.map": "/Mandi_Solone_Portfolio/static/js/main.90e1fb55.js.map",
     "453.b21437c2.chunk.js.map": "/Mandi_Solone_Portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a8c7366.css",
+    "static/css/main.2c25fd6d.css",
     "static/js/main.90e1fb55.js"
   ]
 }
