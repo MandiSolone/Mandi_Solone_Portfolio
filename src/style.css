@@ -24,7 +24,7 @@ body {
   align-items: center;
   color: #213555;
   margin: 0;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   font-size: 16px;
 }
 
@@ -49,14 +49,14 @@ h2 {
 
 /* Navbar */
 nav {
-  width: 95%;  
-  max-width: 1000px; 
+  width: 95%;
+  max-width: 1000px;
   background-color: #4f709c;
   padding: 0.5rem 0; /* Slimmer navbar */
   position: fixed;
   top: 2%;
   left: 50%;
-  transform: translateX(-50%);  /* Centers navbar horizontally */
+  transform: translateX(-50%); /* Centers navbar horizontally */
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for navbar */
   border-radius: 8px; /* Rounded edges for the navbar */
@@ -250,16 +250,16 @@ nav {
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
-  /* Lists */
+/* Lists */
 
 .resume-container ul {
-  list-style-type: none;  /* Removes bullet points */
-  padding-left: 0;        /* Removes left padding */
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes left padding */
 }
 
 .resume-container ul li {
-  margin-bottom: 10px;  /* Adds space between list items */
-  list-style-type: none; 
+  margin-bottom: 10px; /* Adds space between list items */
+  list-style-type: none;
 }
 
 /* Work Experience Section */
@@ -273,7 +273,6 @@ nav {
   font-size: 1.2em;
   color: #333;
 }
-
 
 /* Footer */
 .footer-container {
@@ -314,7 +313,6 @@ nav {
   margin-top: 1rem;
 }
 
-
 /* Media Queries */
 /* Medium screens (tablets) */
 @media (max-width: 768px) {
@@ -342,7 +340,10 @@ nav {
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 cards per row on medium screens */
   }
 
   .project-card {

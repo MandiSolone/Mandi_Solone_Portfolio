@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -8,7 +13,6 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
-
 
 // ScrollToTop Component to handle scroll navigation
 function ScrollToTop() {
@@ -36,24 +40,25 @@ function App() {
       <Navbar />
       <Header />
       <ScrollToTop /> {/* This will handle smooth scrolling */}
-      
       <div className="main-content">
         {/* The homepage route */}
         <Routes>
-          <Route path="/" element={
-            <div className="homepage-container">
-              <About />
-              <Projects />
-              <Skills />
-            </div>
-          } />
-          
+          <Route
+            path="/"
+            element={
+              <div className="homepage-container">
+                <About />
+                <Projects />
+                <Skills />
+              </div>
+            }
+          />
+
           {/* The other routes for individual pages */}
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-
       <Footer />
     </Router>
   );
