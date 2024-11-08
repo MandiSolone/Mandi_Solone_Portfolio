@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Mandi-Solone-Portfolio/static/css/main.3a8c7366.css",
-    "main.js": "/Mandi-Solone-Portfolio/static/js/main.d72ef06e.js",
-    "static/js/453.5037ca97.chunk.js": "/Mandi-Solone-Portfolio/static/js/453.5037ca97.chunk.js",
-    "static/media/Headshot.png": "/Mandi-Solone-Portfolio/static/media/Headshot.62f1dbe21a0d9887ba48.png",
-    "static/media/ben-kolde-bs2Ba7t69mM-unsplash.jpg": "/Mandi-Solone-Portfolio/static/media/ben-kolde-bs2Ba7t69mM-unsplash.a1d8ddf639a9119a6764.jpg",
-    "static/media/diceGame.png": "/Mandi-Solone-Portfolio/static/media/diceGame.31bc354bde7984392b8c.png",
-    "static/media/mondiran.png": "/Mandi-Solone-Portfolio/static/media/mondiran.a827682f5d5c36de3206.png",
-    "index.html": "/Mandi-Solone-Portfolio/index.html",
-    "main.3a8c7366.css.map": "/Mandi-Solone-Portfolio/static/css/main.3a8c7366.css.map",
-    "main.d72ef06e.js.map": "/Mandi-Solone-Portfolio/static/js/main.d72ef06e.js.map",
-    "453.5037ca97.chunk.js.map": "/Mandi-Solone-Portfolio/static/js/453.5037ca97.chunk.js.map"
+    "main.css": "/Mandi_Solone_Portfolio/static/css/main.3a8c7366.css",
+    "main.js": "/Mandi_Solone_Portfolio/static/js/main.658b5016.js",
+    "static/js/453.5037ca97.chunk.js": "/Mandi_Solone_Portfolio/static/js/453.5037ca97.chunk.js",
+    "static/media/Headshot.png": "/Mandi_Solone_Portfolio/static/media/Headshot.62f1dbe21a0d9887ba48.png",
+    "static/media/ben-kolde-bs2Ba7t69mM-unsplash.jpg": "/Mandi_Solone_Portfolio/static/media/ben-kolde-bs2Ba7t69mM-unsplash.a1d8ddf639a9119a6764.jpg",
+    "static/media/diceGame.png": "/Mandi_Solone_Portfolio/static/media/diceGame.31bc354bde7984392b8c.png",
+    "static/media/mondiran.png": "/Mandi_Solone_Portfolio/static/media/mondiran.a827682f5d5c36de3206.png",
+    "index.html": "/Mandi_Solone_Portfolio/index.html",
+    "main.3a8c7366.css.map": "/Mandi_Solone_Portfolio/static/css/main.3a8c7366.css.map",
+    "main.658b5016.js.map": "/Mandi_Solone_Portfolio/static/js/main.658b5016.js.map",
+    "453.5037ca97.chunk.js.map": "/Mandi_Solone_Portfolio/static/js/453.5037ca97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a8c7366.css",
-    "static/js/main.d72ef06e.js"
+    "static/js/main.658b5016.js"
   ]
 }
