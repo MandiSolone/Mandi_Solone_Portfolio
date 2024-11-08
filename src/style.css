@@ -1,5 +1,4 @@
 /* Global Styles */
-
 * {
   box-sizing: border-box; /* Ensures padding and borders don't affect width */
 }
@@ -14,6 +13,7 @@
 }
 
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -29,6 +29,7 @@ body {
 }
 
 html {
+  height: 100vh; 
   scroll-behavior: smooth;
 }
 
@@ -49,8 +50,7 @@ h2 {
 
 /* Navbar */
 nav {
-  width: 95%;
-  max-width: 1000px;
+  max-width: 90%;
   background-color: #4f709c;
   padding: 0.5rem 0; /* Slimmer navbar */
   position: fixed;
@@ -113,7 +113,7 @@ nav {
   border-radius: 50%; /* Makes the image round */
   border: #f0f0f0 solid 0.2rem; /* Add a border around the image */
   width: 250px; /* Set the width of the image */
-  height: 250px; /* Make the height match the width */
+  height: 300px; 
   margin: 0 auto; /* Center the image */
   display: block; /* Ensure it behaves as a block element */
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition for scaling and border */
@@ -125,6 +125,15 @@ nav {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
   border-color: #aad7d9; /* Change border color on hover */
 }
+
+/* .homepage-container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
 
 .about-container p {
   margin: 1rem;
@@ -215,14 +224,6 @@ nav {
   color: #213555; /* Darker shade on hover */
 }
 
-.homepage-container {
-  max-width: 90%;
-  margin: 20px auto;
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
 .contact-container {
   max-width: 900px;
