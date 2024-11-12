@@ -80,7 +80,7 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: #325078;
+  background-color: #bdc2c9;
   color: #ffffff;
   transform: scale(1.1); /* Hover effect: scaling */
 }
@@ -165,7 +165,7 @@ nav {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Up to 3 cards per row */
-  gap: 0.5rem; /* Gap between cards */
+  gap: 1rem; /* Gap between cards */
   justify-items: center; /* Centers the cards horizontally */
   width: 100%; /* Full width of the container */
   box-sizing: border-box; /* Ensure padding/margin is included in width */
@@ -180,7 +180,7 @@ nav {
   overflow: hidden; /* Ensure content doesn't overflow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%; /* Full width, but size will be limited by max-width */
-  max-width: 300px; /* Cards will not get too wide */
+  max-width: 450px; /* Cards will not get too wide */
   margin: 0 auto; /* Centering the card */
 }
 
