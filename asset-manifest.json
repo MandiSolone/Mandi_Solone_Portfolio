@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/Mandi_Solone_Portfolio/static/css/main.2c25fd6d.css",
-    "main.js": "/Mandi_Solone_Portfolio/static/js/main.90e1fb55.js",
+    "main.css": "/Mandi_Solone_Portfolio/static/css/main.6df55bc2.css",
+    "main.js": "/Mandi_Solone_Portfolio/static/js/main.7de07b43.js",
     "static/js/453.b21437c2.chunk.js": "/Mandi_Solone_Portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/Headshot.png": "/Mandi_Solone_Portfolio/static/media/Headshot.62f1dbe21a0d9887ba48.png",
     "static/media/ben-kolde-bs2Ba7t69mM-unsplash.jpg": "/Mandi_Solone_Portfolio/static/media/ben-kolde-bs2Ba7t69mM-unsplash.a1d8ddf639a9119a6764.jpg",
+    "static/media/BookApp.png": "/Mandi_Solone_Portfolio/static/media/BookApp.5f14bf27d0121e3e0087.png",
     "static/media/diceGame.png": "/Mandi_Solone_Portfolio/static/media/diceGame.31bc354bde7984392b8c.png",
+    "static/media/reactMemoryGame.png": "/Mandi_Solone_Portfolio/static/media/reactMemoryGame.3b022c4054e0c9bd23df.png",
+    "static/media/ticTacToe.png": "/Mandi_Solone_Portfolio/static/media/ticTacToe.434f03659f0ca9c8ed6e.png",
     "static/media/mondiran.png": "/Mandi_Solone_Portfolio/static/media/mondiran.a827682f5d5c36de3206.png",
     "index.html": "/Mandi_Solone_Portfolio/index.html",
-    "main.2c25fd6d.css.map": "/Mandi_Solone_Portfolio/static/css/main.2c25fd6d.css.map",
-    "main.90e1fb55.js.map": "/Mandi_Solone_Portfolio/static/js/main.90e1fb55.js.map",
+    "main.6df55bc2.css.map": "/Mandi_Solone_Portfolio/static/css/main.6df55bc2.css.map",
+    "main.7de07b43.js.map": "/Mandi_Solone_Portfolio/static/js/main.7de07b43.js.map",
     "453.b21437c2.chunk.js.map": "/Mandi_Solone_Portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c25fd6d.css",
-    "static/js/main.90e1fb55.js"
+    "static/css/main.6df55bc2.css",
+    "static/js/main.7de07b43.js"
   ]
 }
