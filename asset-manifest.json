@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Mandi_Solone_Portfolio/static/css/main.fa2a18b0.css",
+    "main.css": "/Mandi_Solone_Portfolio/static/css/main.408f9c10.css",
     "main.js": "/Mandi_Solone_Portfolio/static/js/main.0c4069bc.js",
     "static/js/453.b21437c2.chunk.js": "/Mandi_Solone_Portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/Headshot.png": "/Mandi_Solone_Portfolio/static/media/Headshot.62f1dbe21a0d9887ba48.png",
@@ -12,12 +12,12 @@
     "static/media/ticTacToe.png": "/Mandi_Solone_Portfolio/static/media/ticTacToe.434f03659f0ca9c8ed6e.png",
     "static/media/mondiran.png": "/Mandi_Solone_Portfolio/static/media/mondiran.a827682f5d5c36de3206.png",
     "index.html": "/Mandi_Solone_Portfolio/index.html",
-    "main.fa2a18b0.css.map": "/Mandi_Solone_Portfolio/static/css/main.fa2a18b0.css.map",
+    "main.408f9c10.css.map": "/Mandi_Solone_Portfolio/static/css/main.408f9c10.css.map",
     "main.0c4069bc.js.map": "/Mandi_Solone_Portfolio/static/js/main.0c4069bc.js.map",
     "453.b21437c2.chunk.js.map": "/Mandi_Solone_Portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa2a18b0.css",
+    "static/css/main.408f9c10.css",
     "static/js/main.0c4069bc.js"
   ]
 }
