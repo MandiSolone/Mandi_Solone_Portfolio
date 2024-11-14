@@ -15,7 +15,6 @@ html {
 }
 
 body {
-
   gap: 4rem; /* Space between sections */
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -134,7 +133,7 @@ nav {
 .main-content {
   flex: 1; /* Ensures it takes up available space between header and footer */
   width: 100%;
-  max-width: 1200px; /* Optional: Max width for the main content */
+  /* max-width: 1200px; Optional: Max width for the main content */
   margin: 0 auto; /* Center the content */
   padding: 0 2%; /* Optional: Padding to ensure space around content */
 }
