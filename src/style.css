@@ -1,57 +1,64 @@
 /* Global Styles */
 * {
   box-sizing: border-box; /* Ensures padding and borders don't affect width */
+  margin: 0; /* Reset any default margin */
 }
 
-#root {
-  width: 100%;
-  min-height: 100vh; /* Ensures full height for the root container */
-  display: flex;
-  flex-direction: column;
+html, body {
+  width: 100%; /* Ensure body takes up full width */
+  height: 100%; /* Ensure body takes up full height */
+  margin: 0; /* Remove any default margin */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+
   gap: 4rem; /* Space between sections */
-  font-family: "Libre Baskerville", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: center;
   justify-content: flex-start; /* Ensures content starts at the top */
   align-items: center;
-  color: #213555;
-  margin: 0;
-  background-color: #f0f0f0;
+  color: #213555; /* Mid-tone blue for body text */
+  background-color: #f0f0f0; /* Neutral background color */
   font-size: 16px;
   height: 100%; /* Ensures body takes up full height */
+  margin: 0; /* Remove any body margin */
+  padding: 0; /* Remove any body padding */
 }
 
-html {
-  height: 100vh; 
-  scroll-behavior: smooth;
+#root {
+  width: 100%;
+  height: 100%; /* Ensure the root div takes full height */
+  display: flex; /* Parent of main-content so needs flex here to work there*/
+  flex-direction: column;
 }
-
 
 /* Headings (H2 Styling) */
 h2 {
   font-size: 3rem; /* Larger size for H2 to stand out */
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for better contrast */
-  color: #003366; /* Strong blue color */
+  color: #1f3552; /* Strong dark royal blue color */
   margin-top: 40px; /* Added top margin for better spacing */
+}
+
+p {
+  color: rgb(30, 28, 28);
 }
 
 /* Navbar */
 nav {
-  max-width: 90%;
-  background-color: #4f709c;
+  width: 100%;
+  background-color: #011c2c; /* Deep blue background */
   padding: 0.5rem 0; /* Slimmer navbar */
   position: fixed;
-  top: 2%;
   left: 50%;
   transform: translateX(-50%); /* Centers navbar horizontally */
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for navbar */
-  border-radius: 8px; /* Rounded edges for the navbar */
 }
 
 .nav-links {
@@ -71,7 +78,7 @@ nav {
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 8px 16px;
@@ -80,30 +87,29 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: #bdc2c9;
+  background-color: #6d9dc5; /* Light slate blue for hover */
   color: #ffffff;
   transform: scale(1.1); /* Hover effect: scaling */
 }
 
-/* Header Section */
-
 /* Header */
-.header h1 {
+.header-container h1 {
   font-size: 2.5em;
   text-align: center;
   margin-bottom: 20px;
+  color: #f5f4f1; /* Light off-white for header text */
 }
 
 .header-container {
   padding: 100px 5%; /* More margin around the About Me section */
-  background-color: #aad7d9;
+  background-color: #1f3552; /* Dark royal blue */
   width: 100%; /* Prevent content from overflowing */
   margin: 0 auto; /* Centering the content */
 }
 
 .header-container .name {
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* White with shadow for the name */
+  color: #3fa5b8 ;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 28, 44, 0.7); /* Dark shadow with a soft glow */
   font-size: 3rem; /* Adjust the size for prominence */
   font-weight: bold;
 }
@@ -113,32 +119,27 @@ nav {
   border-radius: 50%; /* Makes the image round */
   border: #f0f0f0 solid 0.2rem; /* Add a border around the image */
   width: 250px; /* Set the width of the image */
-  height: 300px; 
+  height: 300px;
   margin: 0 auto; /* Center the image */
   display: block; /* Ensure it behaves as a block element */
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition for scaling and border */
 }
 
-/* Hover effect */
 .header-container img:hover {
   transform: scale(1.1); /* Slightly enlarge the image */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
-  border-color: #aad7d9; /* Change border color on hover */
+  border-color: #aad7d9; /* Light blue border color on hover */
 }
-
+/* Main Container */
 .main-content {
   flex: 1; /* Ensures it takes up available space between header and footer */
   width: 100%;
+  max-width: 1200px; /* Optional: Max width for the main content */
+  margin: 0 auto; /* Center the content */
+  padding: 0 2%; /* Optional: Padding to ensure space around content */
 }
-/* .homepage-container {
-  max-width: 90%;
-  margin: 20px auto;
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-} */
 
+/* About Container */
 .about-container p {
   margin: 1rem;
   text-align: center;
@@ -149,15 +150,14 @@ nav {
 
 /* Section Containers */
 .about-container,
-.parent-project-container,
-.skills-container {
+.parent-project-container {
   margin: 80px 5%;
   padding: 2%;
 }
 
 /* Projects Section */
 .parent-projects-container {
-  background-color: #e5d283; /* Background color for the projects section */
+  background-color: #e5d283; /* Light sky blue for projects section  #a1c6e8*/
   padding: 3%; /* General padding for the section */
 }
 
@@ -198,7 +198,7 @@ nav {
 .project-card .project-text h3 {
   font-size: 1.5rem;
   margin: 10px 0;
-  color: #003366; /* Strong color for project title */
+  color: #003366; /* Darker blue for titles */
   font-weight: bold;
 }
 
@@ -228,16 +228,78 @@ nav {
   color: #213555; /* Darker shade on hover */
 }
 
-
-.contact-container {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Skills Section */
+.skills-container {
+  margin: 0 auto;
+  padding: 50px 5%;
+  text-align: center;
 }
 
+/* Skill items layout */
+.skills-item {
+  display: flex;
+  align-items: center;
+  margin: 30px 5px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow the items to wrap */
+  width: 100%;
+}
+
+/* Alternating layout: Text left, Icon right */
+.skills-item.left {
+  flex-direction: row;
+}
+
+/* Alternating layout: Text right, Icon left */
+.skills-item.right {
+  flex-direction: row-reverse;
+}
+
+/* Skill content block with icon and text */
+.skills-item .skill-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  width: 50%;
+}
+
+/* Skill icon style */
+.skills-item .skill-content svg {
+  margin: 10px;
+  flex-shrink: 0;
+  width: 60px; /* Fixed size for icons */
+  height: 60px; /* Fixed size for icons */
+}
+
+/* Center the text content */
+.skill-text {
+  display: flex;
+  flex-direction: column; /* Stack the h3 and p vertically */
+  align-items: center;
+  text-align: center;
+  width: 50%; /* Text content takes up half of the available width */
+  padding: 10px;
+}
+
+.skills-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #1f3552;
+  text-align: center; /* Center the heading */
+  width: 100%; /* Make sure h3 takes full width for proper alignment */
+}
+
+.skills-item p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Contact and Resume Containers */
+.contact-container,
 .resume-container {
   max-width: 900px;
   margin: 20px auto;
@@ -255,8 +317,8 @@ nav {
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
-/* Lists */
 
+/* Lists */
 .resume-container ul {
   list-style-type: none; /* Removes bullet points */
   padding-left: 0; /* Removes left padding */
@@ -267,22 +329,54 @@ nav {
   list-style-type: none;
 }
 
-/* Work Experience Section */
-.work-experience h3 {
-  font-size: 1.4em;
-  color: #0073e6;
-  margin-top: 20px;
+/* Container for work experience */
+.work-experience {
+  display: block; /* Ensure it's a block-level element */
+  text-align: left; /* Align the content of the work-experience to the left */
+  margin: 0 auto; /* Keep the container centered horizontally */
+  width: 100%; /* Use full width available */
 }
 
-.work-experience h4 {
-  font-size: 1.2em;
-  color: #333;
+/* Work experience section titles (h3, h4) */
+.work-experience h3, .work-experience h4 {
+  font-size: 1.4em;
+  color: #153453; /* Light blue for section title */
+  margin-top: 10px;
+  text-align: left; /* Align the section titles to the left */
+}
+
+/* Work experience list items */
+.work-experience ul li {
+  font-size: 1.1em;
+  margin: 5px 0;
+  list-style-type: circle;
+}
+
+/* Columns Layout for Languages, Technologies, Skills */
+.three-column-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h3 {
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+  color: #153453;
+}
+
+.column ul {
+  padding-left: 20px;
 }
 
 /* Footer */
 .footer-container {
   padding: 2rem 0;
-  background-color: #4f709c;
+  background-color: #011c2c;
   color: #ffffff;
   text-align: center;
   width: 100%;
@@ -298,17 +392,20 @@ nav {
 
 .footer-container .social-icons li {
   margin: 0 15px; /* Spacing between icons */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
 }
 
 .footer-container .social-icons a {
   color: #ffffff;
   font-size: 2rem;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s ease; /* Smooth hover effect for color and scale */
 }
 
 .footer-container .social-icons a:hover {
   color: #aad7d9; /* Color change on hover */
+  transform: scale(1.2); /* Slightly increase size on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for pop effect */
 }
 
 /* Footer Text */
@@ -358,7 +455,37 @@ nav {
   .project-card {
     max-width: 90%; /* Make cards slightly smaller to fit */
   }
+
+
+  /* Skills item container layout */
+  .skills-item {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center; /* Center text */
+  }
+
+  /* Text and icon should take up full width on smaller screens */
+  .skills-item .skill-content,
+  .skills-item .skill-text {
+    width: 100%; /* Both image and text take up 100% of the width */
+  }
+
+  /* Adjust the font size for smaller screens */
+  .skills-item h3 {
+    font-size: 1.6rem; /* Slightly smaller text on small screens */
+  }
+
+  .skills-item p {
+    font-size: 1.1rem; /* Adjust the paragraph font size */
+    padding: 0 15px; /* Add some padding to ensure readability */
+  }
+
+  /* Adjust the icon size */
+  .skills-item .skill-content svg {
+    width: 50px; /* Smaller icons */
+    height: 50px; /* Smaller icons */
+  }
 }
+
 
 /* Smaller screens (mobiles) */
 @media (max-width: 480px) {
@@ -397,4 +524,28 @@ nav {
   .project-card {
     max-width: 95%; /* Make cards fit better on very small screens */
   }
-}
+
+    /* Further adjust font sizes for mobile */
+    .skills-item h3 {
+      font-size: 1.4rem; /* Make text a bit smaller */
+    }
+  
+    .skills-item p {
+      font-size: 1rem; /* Adjust the paragraph font size for readability */
+    }
+  
+    .skills-item .skill-content svg {
+      width: 40px; /* Even smaller icons */
+      height: 40px; /* Even smaller icons */
+    }
+  
+    /* Adjust padding and margins for mobile */
+    .skills-item {
+      margin: 20px 0; /* Smaller margin for mobile screens */
+    }
+  
+    .skills-item .skill-text,
+    .skills-item .skill-content {
+      padding: 10px; /* Padding adjustment for mobile */
+    }
+  }

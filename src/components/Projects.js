@@ -5,12 +5,13 @@ import diceGame from "../images/diceGame.png";
 import bookApp from "../images/BookApp.png"; 
 import reactMemoryGame from "../images/reactMemoryGame.png";
 import ticTacToe from "../images/ticTacToe.png";
+import WeatherApp from "../images/weatherApp.png";
 
 const projectsData = [
   {
     title: "Book Location Tracker App",
     description:
-      "Developed a web application to manage personal libraries by tracking books and their locations, incorporating user authentication and session management. Managed data with MySQL and implemented user authentication using Google OAuth and Passport.js.Enhanced session management with Redis.Retrieved book information from the Google Books API. Used CRUD operations to allow users to input information about the books.React.js |  Node.js | Express.js | MySQL | HTML | CSS | Redis",
+      "Developed a web application to manage personal libraries by tracking books and their locations, incorporating user authentication and session management. Managed data with MySQL and implemented user authentication using Google OAuth and Passport.js.Enhanced session management with Redis.Retrieved book information from the Google Books API. Used CRUD operations to allow users to input information about the books. React.js |  Node.js | Express.js | MySQL | HTML | CSS | Redis",
     image: bookApp,
     link: "https://book-location-tracker-5fd84feff1fd.herokuapp.com/library",
   },
@@ -27,6 +28,13 @@ const projectsData = [
       "This React-Vite Memory Game app challenges users to match pairs of numbers while keeping track of their score. Built with React's component-based structure, the app uses useState to manage the game state, including the current score and best score. The Header component displays the scores, while the Game component handles the logic for generating number pairs, tracking player progress, and updating scores.",
     image: reactMemoryGame,
     link: "https://mandisolone.github.io/react-memory-game/",
+  },
+  {
+    title: "Weather App",
+    description:
+      "A simple and interactive weather application built using HTML, CSS, JavaScript, and the OpenWeatherMap API. Users can search for a city's weather, view real-time temperature (in Fahrenheit and Celsius), and save their favorite cities for easy access. The app allows users to toggle between temperature units and view weather icons based on current conditions. HTML | CSS | JavaScript | OpenWeatherMap API | Webpack ",
+    image: WeatherApp,
+    link: "https://mandisolone.github.io/Weather_App_Project/",
   },
   {
     title: "Tic Tac Toe Game",

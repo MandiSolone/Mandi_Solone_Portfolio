@@ -1,10 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -19,15 +14,16 @@ function ScrollToTop() {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      const timeout = setTimeout(() => {
-        const element = document.querySelector(location.hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100); // Delay scroll for 100ms to ensure the DOM has fully updated
+    // Log location to confirm it's working
+    console.log("Location changed:", location);
 
-      return () => clearTimeout(timeout); // Clean up the timeout
+    // Check if there's a hash in the URL
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        // Scroll to the element smoothly
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }, [location]);
 
@@ -36,17 +32,18 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
+  // Adding basename to Router for subdirectory path
+  <Router basename="/Mandi_Solone_Portfolio">
       <Navbar />
       <Header />
-      <ScrollToTop /> {/* This will handle smooth scrolling */}
+      <ScrollToTop /> {/* Scroll handling */}
       <div className="main-content">
-        {/* The homepage route */}
         <Routes>
+          {/* Main Route (Homepage) */}
           <Route
             path="/"
             element={
-              <div className="homepage-container">
+              <div>
                 <About />
                 <Projects />
                 <Skills />
@@ -54,7 +51,7 @@ function App() {
             }
           />
 
-          {/* The other routes for individual pages */}
+          {/* Other Routes */}
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

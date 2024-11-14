@@ -3,7 +3,7 @@ import React from "react";
 const Resume = () => {
   return (
     <div className="resume-container">
-      <header className="header">
+      <header className="resume-header">
         <h1>Mandi Solone's Resume</h1>
       </header>
 
@@ -11,36 +11,51 @@ const Resume = () => {
         <h2 className="section-title">Summary</h2>
         <p>
           A motivated and quick-learning developer with a solid foundation in
-          both front-end and back-end technologies, including HTML, JavaScript,
-          SQL, and API integration. Eager to expand my expertise and confident
-          in adapting to new technologies. Passionate about continuous learning,
-          and excited to contribute to a collaborative team environment while
-          further developing my technical skills.
+          both front-end and back-end technologies, including HTML,CSS,
+          JavaScript, SQL, Node.js, and API integration. Eager to expand my
+          expertise and confident in adapting to new technologies. Passionate
+          about continuous learning, and excited to contribute to a
+          collaborative team environment while further developing my technical
+          skills.
         </p>
       </section>
 
-      <hr />
+
 
       <section className="section">
         <h2 className="section-title">Education</h2>
         <ul className="education-list">
+          {/* USF */}
           <li>
-            <strong>Bachelor of Science in Biology, Cum Laude</strong> |{" "}
+            <strong>Bachelor of Science in Biology,</strong> Cum Laude
+            <span> | </span>
             <a
               href="https://www.usf.edu/"
               target="_blank"
               rel="noopener noreferrer"
             >
               University of South Florida (USF)
-            </a>{" "}
-            | Tampa, FL - Dec 2011
+            </a>
+            <span> | </span>
+            Tampa, FL - Dec 2011
           </li>
+          {/* Teachers Cert */}
           <li>
-            Educator's Certificate in Math & Biology 6-12th grade | FL
+            <strong>Educator's Certificate </strong> in Math & Biology 6-12th grade  | FL
             Department of Education | 2015-2020
           </li>
+          {/* TrueCoders */}
           <li>
-            Full Stack Web Development | TrueCoders | June 2024 - Oct 2024
+            <strong>Full Stack Web Development </strong> 
+            <span> | </span>
+            <a
+          href="https://app.digit.ink/en/view-credential/a3237f28-5983-44b8-8d3e-5a11d647d2e6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TrueCoders Certificate
+        </a>{" "}
+         | June 2024 - Oct 2024
           </li>
         </ul>
         <p>
@@ -49,10 +64,11 @@ const Resume = () => {
           Developed full-stack skills through multiple JavaScript and SQL
           projects, tracked using Git and GitHub.
         </p>
+        
       </section>
 
-      <hr />
 
+      {/* Technical Projects */}
       <section className="section">
         <h2 className="section-title">Technical Projects</h2>
         <h3>Book Tracker (React.js, Node.js, Express.js, MySQL, CSS, Redis)</h3>
@@ -78,7 +94,7 @@ const Resume = () => {
           <li>Retrieved book information from the Google Books API.</li>
           <li>
             <a
-              href="https://github.com/MandiSolone/book-tracker"
+              href="https://docs.google.com/document/d/1P0w70arO-9HfAucTmQ_dHR648a2Bv6aNVC6HQzobHWE/edit?tab=t.0"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,7 +102,7 @@ const Resume = () => {
             </a>{" "}
             |{" "}
             <a
-              href="https://www.youtube.com/watch?v=example"
+              href="https://drive.google.com/file/d/1BwPPIIfIcGHyNEVqaifC6AKASo_3NP1A/view"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -94,7 +110,7 @@ const Resume = () => {
             </a>{" "}
             |{" "}
             <a
-              href="http://example.com"
+              href="https://book-location-tracker-5fd84feff1fd.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -104,7 +120,7 @@ const Resume = () => {
         </ul>
       </section>
 
-      <hr />
+ 
 
       <section className="section">
         <h2 className="section-title">Work Experience</h2>
@@ -217,35 +233,70 @@ const Resume = () => {
         </div>
       </section>
 
-      <hr />
+    
 
-      <section className="section">
+{/* Languages, Technologies, and Skills Sections */}
+<section className="section">
         <h2 className="section-title">Skills</h2>
-        <ul className="skills-list">
-          <li>Organization & Efficiency</li>
-          <li>Time Management</li>
-          <li>Customer Service</li>
-          <li>Problem Solving</li>
-          <li>Energetic & Enthusiastic</li>
-          <li>Management & Coaching</li>
-          <li>High Sales Producer</li>
-          <li>Negotiation</li>
-          <li>Analytical & Strategic</li>
-          <li>Professional Presentation</li>
-          <li>Managing Profitability</li>
-          <li>Leadership</li>
-        </ul>
+        <div className="three-column-layout">
+          <div className="column">
+            <h3>Languages</h3>
+            <ul>
+              <li>SQL</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div className="column">
+            <h3>Technologies</h3>
+            <ul>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MySQL</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>APIs</li>
+              <li>REST / RESTful APIs</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+
+          <div className="column">
+            <h3>Skills</h3>
+            <ul>
+              <li>Clean Architecture</li>
+              <li>Responsive Web Design</li>
+              <li>Redux</li>
+              <li>Version Control</li>
+              <li>Test-Drive Development (TDD)</li>
+              <li>Agile Method</li>
+              <li>Adobe</li>
+              <li>Microsoft Office</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <hr />
-
+     
+      {/* Awards, Certifications, Achievements */}
       <section className="section">
         <h2 className="section-title">Awards, Certifications, Achievements</h2>
         <ul className="certifications-list">
+           {/* Truecoders */}
           <li>
-            Professional Educator’s Certificate (Math & Biology 6-12th grade) |
-            FL 2015-2020
+            <a
+              href="https://app.digit.ink/en/view-credential/a3237f28-5983-44b8-8d3e-5a11d647d2e6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             TrueCoders Full-Stack Web Development
+            </a>
           </li>
+           {/* CRN */}
           <li>
             Named to the 2023 Women of the Channel List by CRN |{" "}
             <a
