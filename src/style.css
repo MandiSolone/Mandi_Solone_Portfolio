@@ -39,9 +39,10 @@ body {
 /* Headings (H2 Styling) */
 h2 {
   font-size: 3rem; /* Larger size for H2 to stand out */
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for better contrast */
+
   color: #1f3552; /* Strong dark royal blue color */
   margin-top: 40px; /* Added top margin for better spacing */
+  margin-bottom: 40px;
 }
 
 p {
@@ -51,7 +52,7 @@ p {
 /* Navbar */
 nav {
   width: 100%;
-  background-color: #011c2c; /* Deep blue background */
+  background-color: #f0f0f0; 
   padding: 0.5rem 0; /* Slimmer navbar */
   position: fixed;
   left: 50%;
@@ -74,7 +75,7 @@ nav {
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: #1f3552;
   text-decoration: none;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -95,21 +96,21 @@ nav {
 .header-container h1 {
   font-size: 2.5em;
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 20px;
-  color: #f5f4f1; /* Light off-white for header text */
+  color: #f5f4f1;  
 }
 
 .header-container {
   padding: 100px 5%; /* More margin around the About Me section */
-  background-color: #1f3552; /* Dark royal blue */
+  background-color: #1f3552; 
   width: 100%; /* Prevent content from overflowing */
   margin: 0 auto; /* Centering the content */
 }
 
 .header-container .name {
   color: #3fa5b8 ;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 28, 44, 0.7); /* Dark shadow with a soft glow */
-  font-size: 3rem; /* Adjust the size for prominence */
+  font-size: 3rem; 
   font-weight: bold;
 }
 
@@ -143,7 +144,7 @@ nav {
   margin: 1rem;
   text-align: center;
   line-height: 1.6;
-  font-size: 1.1rem; /* Slightly larger font size for readability */
+  font-size: 1.5rem; /* Slightly larger font size for readability */
   word-wrap: break-word; /* Ensure text doesn't overflow */
 }
 
@@ -267,8 +268,8 @@ nav {
 .skills-item .skill-content svg {
   margin: 10px;
   flex-shrink: 0;
-  width: 60px; /* Fixed size for icons */
-  height: 60px; /* Fixed size for icons */
+  width: 100px; /* Fixed size for icons */
+  height: auto; 
 }
 
 /* Center the text content */
@@ -276,7 +277,7 @@ nav {
   display: flex;
   flex-direction: column; /* Stack the h3 and p vertically */
   align-items: center;
-  text-align: center;
+  text-align: start;
   width: 50%; /* Text content takes up half of the available width */
   padding: 10px;
 }
@@ -308,6 +309,13 @@ nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Paragraphs inside Contact and Resume Containers */
+.contact-container p,
+.resume-container p {
+  margin: 15px 0; /* Adjust this value as needed */
+}
+
+
 /* Section titles */
 .section-title {
   font-size: 1.8em;
@@ -315,61 +323,6 @@ nav {
   border-bottom: 2px solid #0073e6;
   padding-bottom: 5px;
   margin-bottom: 15px;
-}
-
-/* Lists */
-.resume-container ul {
-  list-style-type: none; /* Removes bullet points */
-  padding-left: 0; /* Removes left padding */
-}
-
-.resume-container ul li {
-  margin-bottom: 10px; /* Adds space between list items */
-  list-style-type: none;
-}
-
-/* Container for work experience */
-.work-experience {
-  display: block; /* Ensure it's a block-level element */
-  text-align: left; /* Align the content of the work-experience to the left */
-  margin: 0 auto; /* Keep the container centered horizontally */
-  width: 100%; /* Use full width available */
-}
-
-/* Work experience section titles (h3, h4) */
-.work-experience h3, .work-experience h4 {
-  font-size: 1.4em;
-  color: #153453; /* Light blue for section title */
-  margin-top: 10px;
-  text-align: left; /* Align the section titles to the left */
-}
-
-/* Work experience list items */
-.work-experience ul li {
-  font-size: 1.1em;
-  margin: 5px 0;
-  list-style-type: circle;
-}
-
-/* Columns Layout for Languages, Technologies, Skills */
-.three-column-layout {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.column {
-  flex: 1;
-}
-
-.column h3 {
-  font-size: 1.4em;
-  margin-bottom: 1rem;
-  color: #153453;
-}
-
-.column ul {
-  padding-left: 20px;
 }
 
 /* Footer */
